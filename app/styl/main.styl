@@ -4,14 +4,17 @@
 // Make browsers render HTML elements consistently.
 @import 'normalize'
 
-
+// Scaffolding & mixins
 @import '_variables'
-@import '_mixins';
+@import '_mixins'
+@import '_fonts'
 
-@import '_fonts';
+// Pages
+@import '_index'
 
 body
-  font-family  'Helvetica Neue', 'Arial', sans-serif
-  margin  0 auto
-  border  10px solid blue
-  padding 2em
+  background-image url('../images/bg_tile.jpg')
+
+header, section
+    padding-top 4em
+    padding-bottom 4em
