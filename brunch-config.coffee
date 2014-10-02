@@ -1,5 +1,11 @@
 exports.config =
   # See http://brunch.readthedocs.org/en/latest/config.html for documentation.
+  watcher:
+      ignored: /\.sw[pqrs]$/
+
+  conventions:
+      ignored: /\.sw[pqrs]$/
+
   plugins:
     static_jade:
       extension: ".static.jade"
@@ -32,6 +38,7 @@ exports.config =
     # Ensure that our jade templates don't get compiled into our app JS.
     templates:
       joinTo: 'javascripts/template.js'
+
   modules:
     nameCleaner: (path) ->
       path = path.replace(/^app\//, '')
