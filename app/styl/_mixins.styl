@@ -51,7 +51,16 @@ background-x2image($image) {
   }
 }
 
-box-shadow(color)
+_box-shadow(color)
     box-shadow: 0 6px 2px -3px color
     -webkit-box-shadow: 0 6px 2px -3px color
 
+_inset-shadow(color)
+    box-shadow: inset 0 6px 2px -3px color,
+        inset 0 -6px 2px -3px color;
+
+    -moz-box-shadow: inset 0 6px 2px -3px color,
+        inset 0 -6px 2px -3px color;
+
+    -webkit-box-shadow: inset 0 6px 2px -3px color,
+        inset 0 -6px 2px -3px color;
