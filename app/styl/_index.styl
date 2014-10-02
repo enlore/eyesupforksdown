@@ -1,5 +1,9 @@
-$header-font-color = $white
+$header-font-color   = $white
 $header-border-color = $brown
+
+$services-bg = $brown
+$services-fg = $white
+
 $shadow-color = black
 
 header
@@ -16,3 +20,16 @@ header
 section.intro
     h1
         font-size 38px
+
+section.services
+    padding-top 2em
+    padding-bottom 2em
+
+    background-color $services-bg
+    color $services-fg
+
+    box-shadow($shadow-color)
+
+    .content
+        padding-top 4em
+        padding-bottom 4em
