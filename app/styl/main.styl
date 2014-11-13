@@ -13,6 +13,32 @@
 @import '_index'
 @import '_nav'
 
+// Components
+@import '_forms'
+
+.btn-pat
+    background-color $blue
+    color $white
+
+.filigree-up
+    padding-bottom 2em
+
+.filigree-down
+    padding-top 2em
+
+ul
+    list-style none
+
+::selection
+    background-color $blue
+    color $brown
+    text-shadow none
+
+::-moz-selection
+    background-color $blue
+    color $brown
+    text-shadow none
+
 body
   background-image url('../images/bg_tile.jpg')
   width 100%
@@ -30,8 +56,8 @@ img
     display block
 
 .topper
-    background-image url('../images/topper.png')
+    //background-image url('../images/topper.png')
     background-repeat no-repeat
-    background-position center
-    height 164px
+    background-position center 110px
+    //height 164px
     max-width 100%

@@ -1,7 +1,7 @@
 exports.config =
   # See http://brunch.readthedocs.org/en/latest/config.html for documentation.
   watcher:
-      ignored: /\.sw[pqrs]$/
+      ignored: /\.sw[pqrs]$|\.crdownload$/
 
   conventions:
       ignored: /\.sw[pqrs]$/

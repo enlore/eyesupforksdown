@@ -6,6 +6,7 @@ $services-fg = $white
 
 $service-title-bg = $dusty-blue
 $service-title-fg = $white
+$service-img-shadow = $dusty-blue
 
 $shadow-color = black
 
@@ -23,18 +24,80 @@ header
     _box-shadow($shadow-color)
 
     h1
-        font-size 44px
+        font-size 64px
+        //background-color $blue-alpha
+        text-shadow 2px 2px $red
+        padding 0.5em 0
 
-section.intro
+        .quote
+            font-size 144px
+
+section.welcome
+    background-image url('../images/big_portrait.jpg')
+    background-position center center
+    background-size cover
+    background-repeat no-repeat
+
+    .copy
+        a
+            color $red
+
+        h1
+            margin-bottom 10px
+        h2
+            font-size 50px
+            color $blue
+            text-shadow 2px 2px $brown
+            margin-top 0px
+            margin-bottom 20px
+
+        background-color $white
+        background-color $white-alpha
+        box-shadow 0 0 4px 4px $white-alpha
+        padding-top 1em
+        padding-bottom 1em
+
+section.welcome, section.webinars
     h1
-        font-size 100px
+        font-size 60px
         color $intro-headline
+
         text-shadow 2px 2px $intro-text-shadow
+
+section.hire-me
+    background-color $services-bg
+    color $services-fg
+
+section.what-is-etiquette
+    background-image url('../images/dinner_party.jpg')
+    background-position center center
+
+    .copy
+        background-color $blue
+        background-color $blue-alpha
+        padding 2em
+
     p
         margin-top 30px
 
     .large
         font-size 2em
+
+    dt
+        font-size 2em
+        padding-left 32px
+
+    dd
+        font-size 1.5em
+        padding-left 48px
+
+section.blog-posts
+    a
+        color $blog-posts-anchor-color
+
+    h1
+        color $red
+        text-shadow 1px 1px $brown
 
 section.services
     padding-top 2em
@@ -45,6 +108,11 @@ section.services
 
     //_inset-shadow($shadow-color)
 
+    p
+        font-size 24px
+        padding-left 10px
+        padding-right 10px
+
     .content
         padding-top 4em
         padding-bottom 4em
@@ -54,6 +122,9 @@ section.services
         color $service-title-fg
         padding 10px
 
-section.blog-posts
-    a
-        color $blog-posts-anchor-color
+    img.service
+        margin-bottom 10px
+        box-shadow 0 10px 0 -4px $service-img-shadow
+        margin-left auto
+        margin-right auto
+
