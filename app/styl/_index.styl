@@ -20,7 +20,7 @@ header
     background-position center center
     background-attachment fixed
     color $header-font-color
-    border-bottom 20px solid $header-border-color
+    border-bottom 60px solid $header-border-color
     _box-shadow($shadow-color)
 
     h1
@@ -37,6 +37,8 @@ section.welcome
     background-position center center
     background-size cover
     background-repeat no-repeat
+    border-bottom 20px solid $header-border-color
+    _box-shadow($shadow-color)
 
     .copy
         a
@@ -67,10 +69,13 @@ section.welcome, section.webinars
 section.hire-me
     background-color $services-bg
     color $services-fg
+    _box-shadow($shadow-color)
 
 section.what-is-etiquette
     background-image url('../images/dinner_party.jpg')
     background-position center center
+    z-index -1000
+    position relative
 
     .copy
         background-color $blue
@@ -99,12 +104,30 @@ section.blog-posts
         color $red
         text-shadow 1px 1px $brown
 
+section.about-me
+    background-color $brown
+    height auto
+    _box-shadow($shadow-color)
+
+    .copy
+        background-color rgba(255, 255, 255, 0.7)
+        box-shadow 0px 14px 0px -8px $blue
+        padding 1em
+
+    img.portrait
+        border 6px solid $blue
+        margin 1em
+        margin-top 0
+        margin-left auto
+        margin-right auto
+
 section.services
     padding-top 2em
     padding-bottom 2em
 
     background-color $services-bg
     color $services-fg
+    _box-shadow($shadow-color)
 
     //_inset-shadow($shadow-color)
 
